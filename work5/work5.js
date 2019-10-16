@@ -1,35 +1,36 @@
 //9X9的空表，请自行编写这段代码
-str = '<table border="1">'
+str ='<table border="1">'
 for(let i=1;i<10;++i){
     str += '<tr>'
-    for(var j=1;j<=i;++j){
-        str += '<tb>&nbsp;</tb>'
+    for(var j=1;j<10;++j){
+        str += '<td>&nbsp;</td>'
     }
-    str +='</tr>'
+    str += '</tr>'
 }
 str += '</table>'
 document.getElementById('table1').innerHTML = str
 
 //倒九九乘法空表
 str = '<table border="1">'
-for(let i=9;i>0;--j){
+for(var i = 9;i>0;--i){
     str += '<tr>'
-    for(var j=i;j>o;--j){
-        str += '<tb>&nbsp;</tb>'
+    for(var j=i;j>0;--j){
+        str += '<td>&nbsp;</td>'
     }
-    str +='</tr>'
+    str += '</tr>'
 }
 str += '</table>'
 document.getElementById('table2').innerHTML = str
 
-//倒九九乘法表，请自行编写这段代码
+// //倒九九乘法表，请自行编写这段代码
 str = '<table border="1">'
-for(let i=9;i>0;--j){
+for(let i=9;i>0;--i){
     str += '<tr>'
-    for(var j=i;j>o;--j){
-        str += '<tb>&nbsp;</tb>'
+    for(var j=i;j>0;--j){
+        str += '<td>' + j + '*' + i + '=' +(j*i) + '</td>';
     }
-    str +='</tr>'
+    str += '</tr>'
 }
 str += '</table>'
-document.getElementById('table2').innerHTML = str
+document.getElementById('table3').innerHTML = str
+
