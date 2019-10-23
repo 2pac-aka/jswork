@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>张家俊的网页计算器</title>
+</head>
+<body>
+    <P>整数1： <input type="text" id="num1"></P>
+    <P>整数2： <input type="text" id="num2"></P>
+<P>
+    <input type="button" value="相加" onclick="calc(add)">
+    <input type="button" value="相减" onclick="calc(sub)">
+    <input type="button" value="相乘" onclick="calc(mul)">
+    <input type="button" value="相除" onclick="calc(div)">
+</P>
+<P>结果： <input type="text" id="result" readonly></P>
+<p>哥德巴赫猜想</p>
+<P>请输入一个大于2的偶数：<input type="text" id="odd"></P>
+<input type="button" value="找素数" onclick="goldbach()">
+<div id="goldbach"></div>
+</body>
+<script src="index.js"></script>
+<script src="goldbach.js"></script>
+</html>
